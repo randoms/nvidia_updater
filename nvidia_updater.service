@@ -1,0 +1,13 @@
+[Unit]
+Description=Nvidia Drvier Update Service
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/randoms/Documents/nvidia_updater
+ExecStart=/home/randoms/Documents/nvidia_updater/start.sh
+Restart=no
+
+[Install]
+WantedBy=network-online.target
